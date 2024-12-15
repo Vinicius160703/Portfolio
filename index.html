@@ -4,51 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>Portfolio 3D Website HTML CSS e Javascript</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="background">
-        <header>
-            <div class="logo">
-                <i class="fa-solid fa-v"></i>
-            </div><!--logo-->
-            <div class="cabeçalho-link">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-                <li>
-                    <a href="#">Serviços</a>
-                </li>
-                <li>
-                    <a href="#">Trabalho</a>
-                </li>
-                <button>Meu contato</button>
-            </div><!--cabeçalho-link-->
-        </header>
-        <div class="container-text">
-            <div class="text">
-                <h3>Ola, Pessoal</h3>
-                <h1>Eu sou <span>Francisco Vinicius</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis aut neque vero veritatis.<br> quidem animi dicta, ducimus saepe, veniam odit sequi nulla doloribus ipsa vero? Non atque iure dicta!</p>
-                <div class="redes-social">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/_vinicius_1607/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/Vinicius160703"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/francisco-vinicius-5611b6235/"><i class="fa-brands fa-linkedin"></i></a>
-                </div><!--redes-social-->
-                <button class="btn">Sobre Mim</button>
-            </div><!--text-->
-        </div><!--container-text-->
-    </div><!--background-->
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right turn"></div>
 
+        <div class="book">
+            <!-- profile page -->
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="img/download.jpeg" alt="imagem">
+                    <h1>Francisco Vinicius</h1>
+                    <h3>Web Developer</h3>
 
-    <script type="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <div class="social-media">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com/_vinicius_1607/"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="https://github.com/Vinicius160703"><i class="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/francisco-vinicius-5611b6235/"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+
+                    <p>Olá, Eu me chamo Francisco Vinicius, Desenvolvedor Web. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fugit voluptatibus excepturi vitae, possimus dolorem iure laborum.</p>
+
+                    <div class="btn-box">
+                        <a href="#" class="btn">Download CV</a>
+                        <a href="#" class="btn contact-me">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- page 1 & 2 -->
+            <div class="book-page page-right turn" id="turn-1">
+                <!-- page 1 (work experience) -->
+                <div class="page-front">
+                    <h1 class="title">Work Experience</h1>
+
+                 <div class="workeduc-box">
+                    <div class="workeduc-content">
+                        <span class="year"><i class='bx bxs-calendar'></i>2020 - 2021</span>
+                        <h3>Web Developer - Company</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat magni, illum quia alias, tenetur deserunt minima, animi illo sapiente cupiditate vero dolores nulla. Iure!</p>
+                    </div>
+
+                    <div class="workeduc-content">
+                        <span class="year"><i class='bx bxs-calendar'></i>2021 - 2022</span>
+                        <h3>Web Developer - Company</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat magni, illum quia alias, tenetur deserunt minima, animi illo sapiente cupiditate vero dolores nulla. Iure!</p>
+                    </div>
+
+                    <div class="workeduc-content">
+                        <span class="year"><i class='bx bxs-calendar'></i>2022 - 2023</span>
+                        <h3>Web Developer - Company</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat magni, illum quia alias, tenetur deserunt minima, animi illo sapiente cupiditate vero dolores nulla. Iure!</p>
+                    </div>
+                 </div>
+
+                 <span class="number-page">1</span>
+
+                 <!-- next button -->
+                 <span class="nextprev-btn" data-page="turn-1">
+                    <i class="bx bx-chevron-right"></i>
+                 </span>
+                </div>
+
+                <!-- page 2 (education) -->
+                <div class="page-back">
+                    <h1 class="title">Education</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
